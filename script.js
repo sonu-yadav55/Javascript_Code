@@ -67,21 +67,21 @@
 
 //for making game
 
-// const favourite_Serial = "Krishnaleela";
+const favourite_Serial = "Krishnaleela";
 
-// let guess_serial = prompt("Guess my favrouite serial :");
+let guess_serial = prompt("Guess my favrouite serial :");
 
-// while((guess_serial != favourite_Serial) && (guess_serial != "quit")){
+while((guess_serial != favourite_Serial) && (guess_serial != "quit")){
 
-//     guess_serial = prompt("Sorry Incorrect-Try Again");
-// }
-// if(guess_serial==favourite_Serial){
-//     console.log("Congrates! You guess right");
-// }
+    guess_serial = prompt("Sorry Incorrect-Try Again");
+}
+if(guess_serial==favourite_Serial){
+    console.log("Congrates! You guess right");
+}
 
-// else{
-//     console.log("You quit")
-// }
+else{
+    console.log("You quit")
+}
 
 //using nested loops for nested arrays
 
