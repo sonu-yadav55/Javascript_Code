@@ -67,21 +67,21 @@
 
 //for making game
 
-const favourite_Serial = "Krishnaleela";
+// const favourite_Serial = "Krishnaleela";
 
-let guess_serial = prompt("Guess my favrouite serial :");
+// let guess_serial = prompt("Guess my favrouite serial :");
 
-while((guess_serial != favourite_Serial) && (guess_serial != "quit")){
+// while((guess_serial != favourite_Serial) && (guess_serial != "quit")){
 
-    guess_serial = prompt("Sorry Incorrect-Try Again");
-}
-if(guess_serial==favourite_Serial){
-    console.log("Congrates! You guess right");
-}
+//     guess_serial = prompt("Sorry Incorrect-Try Again");
+// }
+// if(guess_serial==favourite_Serial){
+//     console.log("Congrates! You guess right");
+// }
 
-else{
-    console.log("You quit")
-}
+// else{
+//     console.log("You quit")
+// }
 
 //using nested loops for nested arrays
 
@@ -104,4 +104,80 @@ else{
 // }
 
 
+//higher order function
 
+function oddeven(request){
+    if(request == "odd"){
+        return function(n){
+            console.log(!(n%2 == 0));
+        }
+
+        return odd;
+    } else if(request == "even"){
+        return function(n){
+            console.log(n%2 == 0);
+        }
+
+        return even;
+    }
+    else{
+        console.log("Wrong request please try again!")
+    }
+    
+}
+
+let request = "odd"
+
+
+// using foreach 
+let arr = [1,2,3,4,5];
+
+let print = function(el){
+    console.log(el)
+};
+
+arr.forEach(print);
+
+let print1 = (el)=>{
+    console.log(el)
+}
+
+//direct using foreach
+arr.forEach(print1);
+
+//using arrow function in foreach
+arr.forEach(element => {
+    console.log(element)
+});
+
+let student = [
+
+    {
+    name:"sonu",
+    marks:95,
+},
+{
+    name:"anushka",
+    marks:94,
+},
+
+];
+
+student.forEach((student) =>{
+    console.log(student.name)
+    console.log(student.marks)
+    console.log(student)
+});
+
+let gpa = student.map((el) =>{
+    return el.marks/10
+});
+console.log(gpa);
+// now we usedd map function(used for doubling the value and create new array)
+
+let num = [1,2,3,4,5];
+let double = num.map((el) =>{
+    return el*2;
+});
+
+console.log(double);
