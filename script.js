@@ -173,7 +173,7 @@ let gpa = student.map((el) =>{
     return el.marks/10
 });
 console.log(gpa);
-// now we usedd map function(used for doubling the value and create new array)
+// now we used map function(used for doubling the value and create new array)
 
 let num = [1,2,3,4,5];
 let double = num.map((el) =>{
@@ -181,3 +181,81 @@ let double = num.map((el) =>{
 });
 
 console.log(double);
+
+//now we use reduce function
+
+let number = [1,2,3,4,5];
+let finalsum = number.reduce((res,el) => (res+el));
+console.log(finalsum);
+
+
+//finding maximum value  from in array using reduce function
+
+let arrvalue = [23,24,,35,56,67,63,34,78,66,98];
+
+let maxnum = arrvalue.reduce((max,el) => {
+    if(el>max){
+        return el;
+    }
+    else{
+        return max;
+    }
+});
+
+console.log(maxnum);
+
+//check number of array are multiple of ten or not
+
+let numa = [10,20,30,40,50];
+
+let ans = numa.every((el) => el%10==0);
+console.log(ans);
+
+
+//using spread function in javascript
+let char = "Hii World Of Jacascript";
+console.log(...char);
+
+let even = [2,4,6,8,10]
+let odd = [1,3,5,7,9]
+
+// we merge both array in singlr array
+
+console.log(...even, ...odd); 
+
+//spread with object literal
+
+let data = {
+    email: "a@gmail.com",
+    password: "12345"
+}
+
+let copydata = {...data,id:1}
+
+console.log(copydata);
+
+let arrs = [23,54,56,22,54,86]
+
+arrdata = {...arrs}
+
+console.log(arrdata);
+
+//Destructuring method
+//storing value of array into multiple variable
+
+let names = ["Sonu","Shivsankar","Shayma","Krish","Radhe"];
+let [winner,runnerup,...others] = names;
+console.log("Winner :",winner,"RunnerUp :",runnerup);
+
+// Destructuring with object
+
+let Student = {
+    name:"Sonu",
+    class:10,
+    email:"s@gmail.com",
+    password:"12345",
+    city:"Mumbai",
+}
+
+let {name,email} = Student
+console.log(name,email);
