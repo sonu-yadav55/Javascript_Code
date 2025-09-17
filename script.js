@@ -243,7 +243,7 @@ console.log(arrdata);
 //Destructuring method
 //storing value of array into multiple variable
 
-let names = ["Sonu","Shivsankar","Shayma","Krish","Radhe"];
+let names = ["Sonu","Shivsankar","Shayma","Krish","Radhe","Krishna"];
 let [winner,runnerup,...others] = names;
 console.log("Winner :",winner,"RunnerUp :",runnerup);
 
